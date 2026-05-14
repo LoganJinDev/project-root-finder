@@ -1,0 +1,30 @@
+# IDE
+.idea/
+
+# macOS
+**/.DS_Store
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Cache & Temp
+*/cache/
+*/log
+*.log
+
+# Environment
+.env
+.env.*
+# Copilot
+.copilot/
+
+# Editor
+*.swp
+*.swo
+*~

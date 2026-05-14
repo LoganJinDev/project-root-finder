@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-root-finder"
+version = "0.1.0"
+description = "Auto-find project root by name or markers"
+readme = "README.md"
+authors = [{name = "Logan.Jin", email = "loganjincn@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = []   # 无任何第三方依赖
+
+[project.urls]
+Homepage = "https://github.com/yourname/project-root-finder"
