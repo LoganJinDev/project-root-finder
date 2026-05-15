@@ -16,7 +16,6 @@ def find_project_root_by_name(
     project_name: Optional[str] = None,
     extra_markers: Optional[List[str]] = None
 ) -> pathlib.Path:
-    # ... 你已有的实现代码 ...
     if project_name is None:
         project_name = os.environ.get("PROJECT_NAME") or "crawler"
         if not project_name:
@@ -29,4 +28,7 @@ def find_project_root_by_name(
                 if (parent / marker).exists():
                     return parent
             continue
-    raise RuntimeError(...)
+    raise RuntimeError(
+        f"未找到名称为 '{project_name}' 的项目根目录"
+        + (f"（需包含以下标记之一：{extra_markers}）" if extra_markers else "")
+    )
